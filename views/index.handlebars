@@ -1,16 +1,16 @@
 <h1>In-da-Burger</h1>
-<img src="/t-mcdonalds-qpc-deluxe-burger.jpg"  width="460" height="345">
-<h2>Devoured</h2>
+<img src="/kissclipart-burger-cartoon-clipart-hamburger-cheeseburger-amer-af3b6759dc00ccae.jpg"  width="460" height="345">
+<h2>new burger</h2>
 
 <ul>
   {{#each burgers}}
     {{#unless devoured}}
-      {{> burgers/burgers-block devoured=false}}
+      {{> burgers/burgers-block devoured=true}}
     {{/unless}}
   {{/each}}
 </ul>
 
-<h2>New burger</h2>
+<h2>devoured</h2>
 
 <ul>
   {{#each burgers}}
@@ -30,8 +30,8 @@
 
   <div class="form-group">
     <label for="devoured">add?</label><br>
-    <input type="radio" name="addnew" value="1" checked> add new delicious burger<br>
-  
+    <input type="radio" name="devoured" value="1" checked> devoured<br>
+    <input type="radio" name="devoured" value="0">new burger
   </div>
 
   <button type="submit">Add burger</button>
